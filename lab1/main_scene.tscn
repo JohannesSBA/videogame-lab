@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://6ixfp1b0qp0a"]
+[gd_scene load_steps=4 format=3 uid="uid://6ixfp1b0qp0a"]
 
 [ext_resource type="Texture2D" uid="uid://dqjgmk66ueodj" path="res://TX Tileset Grass.png" id="1_la183"]
+[ext_resource type="PackedScene" uid="uid://bwt5rvqw5ysaa" path="res://scene_2.tscn" id="2_hyiwl"]
+[ext_resource type="Texture2D" uid="uid://bck38e3o7rcgx" path="res://icon.svg" id="3_n44eu"]
 
 [node name="Main Scene" type="Node2D"]
 
@@ -8,3 +10,15 @@
 position = Vector2(569.5, 327.5)
 scale = Vector2(4.42578, 2.51953)
 texture = ExtResource("1_la183")
+
+[node name="Node2D" parent="." instance=ExtResource("2_hyiwl")]
+position = Vector2(-99, -1)
+
+[node name="Icon" type="Sprite2D" parent="."]
+modulate = Color(1, 0.368627, 1, 1)
+position = Vector2(82, 572)
+texture = ExtResource("3_n44eu")
+
+[node name="Icon2" type="Sprite2D" parent="."]
+position = Vector2(1045, 95)
+texture = ExtResource("3_n44eu")
