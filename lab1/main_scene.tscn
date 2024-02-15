@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://6ixfp1b0qp0a"]
+
+[ext_resource type="Texture2D" uid="uid://dqjgmk66ueodj" path="res://TX Tileset Grass.png" id="1_la183"]
+
+[node name="Main Scene" type="Node2D"]
+
+[node name="TxTilesetGrass" type="Sprite2D" parent="."]
+position = Vector2(569.5, 327.5)
+scale = Vector2(4.42578, 2.51953)
+texture = ExtResource("1_la183")
