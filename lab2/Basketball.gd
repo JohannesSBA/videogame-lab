@@ -21,8 +21,8 @@ func _process(delta):
 	if position.y <= (viewport_height / 2):
 		dir = 1
 	
-	if Input.is_action_pressed("ui_right") && position.x < viewport_width:
+	if Input.is_action_pressed("right") && position.x < viewport_width:
 		position.x += 5
-	if Input.is_action_pressed("ui_left") && position.x > 0:
+	if Input.is_action_pressed("left") && position.x > 0:
 		position.x -= 5
 	pass
