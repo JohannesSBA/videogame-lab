@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://os8mpa6irukh"]
+
+[ext_resource type="Texture2D" uid="uid://dvel0hhswrrr3" path="res://wooden-background.webp" id="1_ubval"]
+
+[node name="Wooden-background" type="Sprite2D"]
+z_index = -1
+position = Vector2(759, 256)
+scale = Vector2(1.7111, 1.7111)
+texture = ExtResource("1_ubval")

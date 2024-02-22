@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://ru7uy64r8huf"]
+
+[ext_resource type="Texture2D" uid="uid://d3nf3n3wsxlq1" path="res://basketball.png" id="1_cyofk"]
+[ext_resource type="Script" path="res://Basketball.gd" id="2_dfsan"]
+[ext_resource type="Texture2D" uid="uid://dvel0hhswrrr3" path="res://wooden-background.webp" id="3_ej4cq"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Basketball" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(553, 410)
+scale = Vector2(0.0495, 0.0495)
+texture = ExtResource("1_cyofk")
+script = ExtResource("2_dfsan")
+
+[node name="Wooden-background" type="Sprite2D" parent="."]
+position = Vector2(559, 321)
+texture = ExtResource("3_ej4cq")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 209.0
+offset_top = 31.0
+offset_right = 881.0
+offset_bottom = 303.0
+theme_override_font_sizes/font_size = 70
+text = "use <- to move left
+use -> to move right"
